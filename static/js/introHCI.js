@@ -5,8 +5,10 @@ $(document).ready(function() {
 function initializePage() {
     $('#testjs').click(function(e) {
             $('.jumbotron h1').text("Javascript is connected");
-            });
-    $("a.thumbnail").click(projectClick);
+            $("a.thumbnail").click(projectClick);
+          });
+
+  }
 
 function projectClick(e) {
     // prevent the page from reloading
@@ -15,4 +17,3 @@ function projectClick(e) {
     // the object that triggered the event
     $(this).css("background-color", "#7fff00");
   }
-}
